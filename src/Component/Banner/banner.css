@@ -1,0 +1,146 @@
+
+.each-slide-effect {
+  background-color: rgb(252, 136, 104);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 88.4vh;
+}
+
+.slid-inf {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 75vh;
+}
+
+.inf1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.inf1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.inf1 h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 7rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: white;
+}
+
+.inf1 p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.inf2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 20vh;
+  cursor: pointer;
+}
+
+.inf2 span:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+
+.inf2 span {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin-right: 13rem;
+}
+
+.slid-img {
+  width: 50%;
+}
+
+.slid-img .img-con {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-1 {
+  transition: all 2s ease-in-out;
+}
+
+/* Slid 1 */
+.anim {
+  animation-name: Slid;
+  animation-duration:5s;
+}
+
+@keyframes Slid {
+  from {
+    transform: translateX(10rem)
+  }
+
+  to {
+    transform: translateX(0rem)
+  }
+}
+
+/* 1160  1000*/
+@media screen and (max-width: 1000px) {
+  .each-slide-effect {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    height: 150vh;
+  }
+
+  .slid-inf,
+  .slid-img {
+    width: 100%;
+  }
+
+  .inf2 span:hover {
+    transform: scale(1.7);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .slid-img .img-con {
+    transform: scale(0.5);
+  }
+
+  .inf1 h2 {
+    font-size: 6rem;
+  }
+
+  .inf2 span {
+    font-size: 1rem;
+  }
+
+  .inf1 p {
+    font-size: 1.5rem;
+  }
+
+  .off {
+    font-size: 4rem;
+  }
+}

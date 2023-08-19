@@ -1,0 +1,86 @@
+.cook-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 5rem;
+}
+.cook-con{
+    width: 50%;
+}
+.page-con{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cook-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cook-img img{
+    transform: scale(0.8);
+}
+
+.cook-inf h2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 3.7rem;
+}
+.cook-inf p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: gray;
+    width: 66%;
+}
+.ad-ad {
+    background-color: rgb(244, 198, 81);
+    padding: 10px;
+    height: 4rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: white;
+    font-family: inherit;
+    font-size: 1.3rem;
+}
+
+.ad-ad:hover {
+    opacity: 1;
+    background-color: rgb(255 187 13);
+}
+
+/* 1030 */
+
+@media screen and (max-width: 1030px) {
+    .page-con{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cook-inf , .cook-img ,.cook-inf p , .cook-con{
+        width: 100%;
+    }
+    .cook-img{
+        justify-content: end;
+    }
+    .cook-img img{
+        transform: scale(0.7);
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .cook-img img{
+        transform: scale(0.6) translateX(21rem);
+    }
+}

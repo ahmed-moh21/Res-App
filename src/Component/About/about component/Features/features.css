@@ -1,0 +1,64 @@
+.feat-page{
+    padding: 15px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.feat-con{
+    width: 86%;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featcon1{
+    margin-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.featcon1 div h2 {
+    font-size: 2.5rem;
+    font-family: monospace;
+}
+
+.featcon1 div p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.featcon2 {
+    margin-left: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.m-l{
+    margin-left: 2.5rem !important;
+}
+
+.m-r{
+    margin-right: 2.5rem !important;
+}
+
+.featcon2 img{
+    width: 45rem;
+}
+
+@media screen and (max-width: 1170px) {
+    .feat-con{
+        flex-direction: column;
+    }
+} 
+
+@media screen and (max-width: 660px) {
+    .featcon2  {
+       transform: scale(0.8);
+    }
+    .feat-con{
+        flex-direction: column;
+    }
+} 
